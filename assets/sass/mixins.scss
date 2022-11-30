@@ -1,0 +1,29 @@
+@mixin reset-list 
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@mixin font-rules 
+{
+    font-family: $bolby;
+}
+
+@mixin menu-lateral 
+{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $dark-blue;
+    color: $off-white;
+    border-right: 1px solid $wash-blue;
+
+}
+
+
