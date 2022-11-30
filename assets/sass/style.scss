@@ -53,7 +53,6 @@ body
                 a 
                 {
                     display: flex;
-                    text-decoration: none;
 
                     p 
                     {
@@ -61,12 +60,14 @@ body
                         font-size: 1em;
                         align-self: flex-end;
                         padding-left: 15px;
+
+                        &:hover 
+                        {
+                            color: $gold-yellow;
+                        }
                     }
                     
-                    :hover 
-                    {
-                        color: $gold-yellow;
-                    }
+                    
                     
                 }
             }
@@ -87,29 +88,66 @@ body
 .main-container 
 {
     margin-left: 25%;
+    margin-right: 5%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $off-white;
-
-    h2 
-    {
-        font-size: 3em;
-        margin-top: 15px;
-        letter-spacing: 5px;
-
-    }
-
-    p
-    {
-        font-size: 1em;
-        margin-top: 15px;
-    }
     
-    img 
-    {
-        width: 10%;
+    .homepage 
+    {   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $off-white;
+        height: 100vh;
+
+        h2 
+        {
+            font-size: 3em;
+            margin-top: 15px;
+            letter-spacing: 5px;
+
+        }
+
+        p
+        {
+            font-size: 1em;
+            margin-top: 15px;
+        }
+        
+        img 
+        {
+            width: 10%;
+        }
+
+        ul 
+        {
+            display: flex;
+            margin-top: 25px;
+
+            li 
+            {
+                padding: 0px 10px;
+
+            }
+        }
+
+        .button 
+        {
+            margin-top: 35px;
+            a 
+            {
+                color: $off-white;
+                background-color: $scarlet-red;
+                padding: 10px 20px;
+                border-radius: 10px;
+                
+                &:hover
+                {
+                    color: $wash-blue;
+                    background-color: $gold-yellow;
+                }
+            }
+
+        }
     }
 }
