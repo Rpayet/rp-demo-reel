@@ -25,7 +25,24 @@
     background-color: $dark-blue;
     color: $off-white;
     border-right: 1px solid $wash-blue;
+}
 
+@mixin button-red 
+{
+    margin-top: 35px;
+            a 
+            {
+                color: $off-white;
+                background-color: $scarlet-red;
+                padding: 10px 20px;
+                border-radius: 10px;
+                
+                &:hover
+                {
+                    color: $wash-blue;
+                    background-color: $gold-yellow;
+                }
+            }
 }
 
 

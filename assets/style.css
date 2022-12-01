@@ -119,4 +119,63 @@ body {
   background-color: #ffd05f;
 }
 
+.folio-container {
+  margin-left: 25%;
+  margin-right: 5%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.folio-container .card {
+  width: 30%;
+  height: 60vh;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0px 50px;
+}
+.folio-container .card .preview {
+  width: 100%;
+  border: 1px solid #ff4b5f;
+  border-radius: 25px;
+}
+.folio-container .card .preview img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.folio-container .card .resume {
+  text-align: center;
+}
+.folio-container .card .resume h2 {
+  color: #ffd05f;
+  font-size: calc(1.5vw + 6px);
+  margin-top: 10px;
+}
+.folio-container .card .resume p {
+  color: #f9fbfa;
+  font-size: calc(0.4vw + 6px);
+  margin-top: 10px;
+}
+.folio-container .card hr {
+  color: #ff4b5f;
+  margin: 15px 0px;
+}
+.folio-container .card .skills {
+  width: 100%;
+}
+.folio-container .card .skills ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.folio-container .card .skills ul li {
+  display: flex;
+  justify-content: center;
+}
+.folio-container .card .skills ul li img {
+  width: 50%;
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
