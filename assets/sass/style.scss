@@ -195,6 +195,19 @@ body
                 object-fit: cover;
                 border-radius: 25px;
             }
+
+            a:hover::before
+                {
+                    display: flex;
+                    content: url(assets/img/icon-view.svg);
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    width: 100%;
+                    background-color: hsla(178, 100%, 50%, .5);
+                    opacity: 1;
+                    border-radius: 25px;
+                }
         }
 
         .resume 
