@@ -173,73 +173,80 @@ body
     justify-content: center;
     align-items: center;
 
-    .card 
+    .card
     {
-        width: 30%;
-        height: 60vh;
-        border-radius: 25px;
-        padding: 20px;
-        margin: 0px 50px;
-        border: 1px solid $wash-blue;
         background-color: $off-white-t;
-
-        .preview 
-        {
-            width: 100%;
-            border-radius: 25px;
-
-
-            img 
-            {
-                width: 100%;
-                object-fit: cover;
-                border-radius: 25px;
-            }
-
-            a:hover::before
-                {
-                    display: flex;
-                    content: url(assets/img/icon-view.svg);
-                    align-items: center;
-                    justify-content: center;
-                    position: absolute;
-                    width: 100%;
-                    background-color: hsla(178, 100%, 50%, .5);
-                    opacity: 1;
-                    border-radius: 25px;
-                }
-        }
-
-        .resume 
-        {
-            text-align: center;
-            h2 
-            {
-                color: $gold-yellow;
-                font-size: calc( 1.5vw + 6px);
-                margin-top: 10px;
-            }
-
-            p 
-            {
-                color: $off-white;
-                font-size: calc( .4vw + 6px);
-                margin-top: 10px;
-            }
-        }
-        
-        .button 
-        {
-            @include button-red;
-            text-align: center;
-            
-        }
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: 15vh auto;
+        padding: 30px;
+        justify-content: center;
+        border-radius: 15px;
 
         &:hover 
         {
             background-color: $off-white-th;
         }
+
+        .item-img
+        {
+            width: 100%;
+
+            img
+            {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+
+            a 
+            {
+                &:hover
+                {
+                    &::before 
+                    {
+                        display: flex;
+                        content: url();
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        width: 343.2px;
+                        height: 343.2px;
+                        background-image: url(assets/img/Nephyla.gif);
+                        background-color: $gold-yellow;
+                        opacity: .5;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+
+        .item-description 
+        {
+            text-align: center;
+            a 
+            {
+                color: $off-white;
+                h2
+                {
+                    padding-top: 10px;
+
+                    &:hover 
+                    {
+                        color: $gold-yellow;
+                    }
+                }
+            }
+
+            .description-text
+            {
+                padding-top: 10px;
+            }
+        }
+
     }
 
-    
+
 }
