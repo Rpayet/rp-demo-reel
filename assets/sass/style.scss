@@ -175,74 +175,62 @@ body
 
     .card
     {
-        background-color: $off-white-t;
         width: 30%;
         display: flex;
         flex-direction: column;
         margin: 15vh auto;
         padding: 30px;
         justify-content: center;
-        border-radius: 15px;
+        border-radius: 50%;
+        transition: .5s;
+        background-image: url(../img/Job01_Sample.jpg);
 
         &:hover 
         {
-            background-color: $off-white-th;
+            border: 5px solid $wash-blue;
+            transform: scale(1.1);
         }
 
         .item-img
         {
-            width: 100%;
+            width: 80%;
+            margin: auto;
+
 
             img
             {
                 display: block;
                 width: 100%;
                 object-fit: cover;
-                border-radius: 15px;
+                border-radius: 50%;
             }
 
             a 
             {
-                &:hover
-                {
-                    &::before 
-                    {
-                        display: flex;
-                        content: url();
-                        align-items: center;
-                        justify-content: center;
-                        position: absolute;
-                        width: 343.2px;
-                        height: 343.2px;
-                        background-image: url(assets/img/Nephyla.gif);
-                        background-color: $gold-yellow;
-                        opacity: .5;
-                        border-radius: 15px;
-                    }
-                }
+                width: 75%;
             }
         }
 
         .item-description 
         {
             text-align: center;
-            a 
-            {
-                color: $off-white;
-                h2
-                {
-                    padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-                    &:hover 
-                    {
-                        color: $gold-yellow;
-                    }
-                }
+            h2 
+            {
+                margin-top: 10px;
+                color: $off-white;
             }
 
-            .description-text
+            p
             {
-                padding-top: 10px;
+                margin-top: 10px;
+                color: $wash-blue;
+                width: 50%;
+                font-size: .8em;
+                letter-spacing: 0;
             }
         }
 

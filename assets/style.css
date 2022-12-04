@@ -139,54 +139,49 @@ body {
   align-items: center;
 }
 .folio-container .card {
-  background-color: rgba(249, 251, 250, 0.0588235294);
   width: 30%;
   display: flex;
   flex-direction: column;
   margin: 15vh auto;
   padding: 30px;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background-image: url(../img/Job01_Sample.jpg);
 }
 .folio-container .card:hover {
-  background-color: rgba(249, 251, 250, 0.1843137255);
+  border: 5px solid #8481a2;
+  transform: scale(1.1);
 }
 .folio-container .card .item-img {
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 .folio-container .card .item-img img {
   display: block;
   width: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 50%;
 }
-.folio-container .card .item-img a:hover::before {
-  display: flex;
-  content: url();
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 343.2px;
-  height: 343.2px;
-  background-image: url(assets/img/Nephyla.gif);
-  background-color: #ffd05f;
-  opacity: 0.5;
-  border-radius: 15px;
+.folio-container .card .item-img a {
+  width: 75%;
 }
 .folio-container .card .item-description {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.folio-container .card .item-description a {
+.folio-container .card .item-description h2 {
+  margin-top: 10px;
   color: #f9fbfa;
 }
-.folio-container .card .item-description a h2 {
-  padding-top: 10px;
-}
-.folio-container .card .item-description a h2:hover {
-  color: #ffd05f;
-}
-.folio-container .card .item-description .description-text {
-  padding-top: 10px;
+.folio-container .card .item-description p {
+  margin-top: 10px;
+  color: #8481a2;
+  width: 50%;
+  font-size: 0.8em;
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
