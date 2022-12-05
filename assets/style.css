@@ -139,49 +139,34 @@ body {
   align-items: center;
 }
 .folio-container .card {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
+  width: 250px;
+  height: 250px;
   margin: 15vh auto;
   padding: 30px;
-  justify-content: center;
   border-radius: 50%;
+  background-image: url(img/Job01_Sample.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border: 2px solid #f9fbfa;
   transition: 0.5s;
-  background-image: url(../img/Job01_Sample.jpg);
+}
+.folio-container .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #ffd05f;
+  opacity: 0.2;
 }
 .folio-container .card:hover {
-  border: 5px solid #8481a2;
+  background-image: url(img/Nephyla.gif);
+  background-position: -90px;
   transform: scale(1.1);
-}
-.folio-container .card .item-img {
-  width: 80%;
-  margin: auto;
-}
-.folio-container .card .item-img img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.folio-container .card .item-img a {
-  width: 75%;
-}
-.folio-container .card .item-description {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.folio-container .card .item-description h2 {
-  margin-top: 10px;
-  color: #f9fbfa;
-}
-.folio-container .card .item-description p {
-  margin-top: 10px;
-  color: #8481a2;
-  width: 50%;
-  font-size: 0.8em;
-  letter-spacing: 0;
+  border: 5px solid #ffd05f;
 }
 
 /*# sourceMappingURL=style.css.map */
