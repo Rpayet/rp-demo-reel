@@ -63,7 +63,7 @@ body {
 .menu .navbar ul li a p {
   color: #f9fbfa;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 800;
   align-self: flex-end;
   padding-left: 15px;
 }
@@ -145,28 +145,39 @@ body {
   padding: 30px;
   border-radius: 50%;
   background-image: url(img/Job01_Sample.jpg);
-  background-size: cover;
+  background-size: 150%;
+  background-position: -60px 0px;
   background-repeat: no-repeat;
   position: relative;
   border: 2px solid #f9fbfa;
   transition: 0.5s;
 }
-.folio-container .card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: #ffd05f;
-  opacity: 0.2;
+.folio-container .card .card-def {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.folio-container .card .card-def h2 {
+  color: #ffd05f;
+  font-weight: 800;
+}
+.folio-container .card .card-def p {
+  color: #f9fbfa;
+  font-weight: 800;
 }
 .folio-container .card:hover {
   background-image: url(img/Nephyla.gif);
+  background-size: cover;
   background-position: -90px;
   transform: scale(1.1);
   border: 5px solid #ffd05f;
+  justify-content: flex-end;
+}
+.folio-container .card:hover .card-def {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
